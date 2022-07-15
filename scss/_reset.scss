@@ -1,0 +1,48 @@
+@import '_variables';
+@import '_mixins';
+
+// Fonts
+
+
+// Reset CSS 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden !important;
+}
+
+a {
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    transition: 0.3s ease;
+}
+
+section {
+    padding: 7rem 0;
+}
+
+@include mq (575.98px) {
+    section{
+        padding: 4rem 0;
+    }
+}
